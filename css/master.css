@@ -1,0 +1,202 @@
+/* rule code */
+:root
+{
+      --color--: #19c8fa;
+            --blue-color: #0075ff;
+            --blue-alt-color: #0d69d5;
+            --orange-color: #f59e0b;
+            --green-color: #22c55e;
+            --red-color: #f44336;
+            --gray-color: #888;
+}
+/*  */
+/* header{
+      margin: 0 200px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+      padding: 20px;
+}
+header .logo{
+
+}
+header nav{
+      height: 100%;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+}
+
+header nav > ul{
+      position: relative;
+      display: flex;
+      gap: 15px;
+}
+header nav > ul li{
+}
+header nav > ul li a{
+      padding-bottom: 38px;
+      color: #FFF;
+      z-index: 999;
+}
+header nav > ul li a:hover{
+      color: var(--color--);
+      border-bottom: 1px solid var(--color--);
+}
+header nav i{
+      padding: 20px;
+      position: relative;
+}
+header nav ul::before{
+      content: '';
+      position: absolute;
+      right: -20px;
+      top: 0;
+      width: 2px;
+      height: 100%;
+      background-color: #FFF;
+} */
+/* End rule code */
+*
+{
+      box-sizing: border-box;
+      --webkit--box-sizing: border-box;
+      --moz--box-sizing: border-box;
+}
+html
+{
+      scroll-behavior: smooth;
+}
+body
+{
+      margin: 0;
+      padding: 0;
+      font-family: 'Comfortaa', 'cursive';
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Work Sans', sans-serif;
+            background-color: black;
+}
+ul{
+      list-style: none;
+}
+.container{
+
+      /* width: 600px; */
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: auto;
+      margin-right: auto;
+}
+
+@media (min-width:768) {
+      .container {
+            width: 750x;
+      }
+}
+
+@media (min-width:992) {
+      .container {
+            width: 970px;
+      }
+
+}
+
+@media (min-width:1200) {
+
+      .container {
+            width: 1170px;
+      }
+}
+/* rule code */
+/* Start Header */
+      .kasper-page{
+            /* background-image: url(../images/landing.jpg); 
+            height: 100vh; */
+            background-image: url(../images/landing.jpg);
+            height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+      }
+      .kasper-page::before{
+            content: '';
+            position: absolute;
+            background-color: #000;
+            opacity: .4;
+            width: 100%;
+            height: 100%;
+      }
+      .kasper-page::after{
+            /* content: ""; */
+            position: absolute;
+            height: 1px;
+            background-color: #fff;
+            /* bottom: 0; */
+            width: calc(100% - 30px);
+            left: 15px;
+      }
+      .kasper-page .kasper{
+            border-bottom: 1px solid #fff;
+            width: 800px;
+            margin: 0 auto;
+      }
+      /* .kasper-page .links::after{
+            position: absolute;
+            content: '';
+            background-color: #fff;
+            width: 205%;
+            height: 2px;
+            bottom: 0;
+            right: 0;
+            
+      } */
+      .kasper-page ul li a{
+            color: #fff;
+            transition: 0.3s;
+            padding-bottom: 17px;
+      }
+      .kasper-page ul li {
+            padding-right: 20px;
+            transition: 0.3s;
+            z-index: 9999;
+      }
+      .kasper-page ul li a:hover,.kasper-page ul li > .active{
+            color: var(--color--);
+            border-bottom: 1px solid var(--color--);
+      }
+      .kasper-page .search{
+            margin-left: 30px;
+            border-left: 2px solid #fff;
+            padding-left: 15px;
+      }
+      .kasper-page .links i.toggle-menu{
+            display: none;
+      }
+      @media (max-width: 767px){
+            .kasper-page .links i.toggle-menu{
+                  display: block;
+            }
+            .kasper-page .links ul{
+                  display: none;
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  padding: 25px 0;
+                  width: 100%;
+            }
+            .kasper-page .links ul li{
+                  padding-right: 0;
+            }
+            .kasper-page .kasper{
+                  width: 100%;
+            }
+            .kasper-page .links ul a{
+                  width: 100%;
+                  background-color: #222;
+                  display: flex;
+                  padding: 10px;
+                  align-items: center;
+            }
+      }
+/* End Header */
